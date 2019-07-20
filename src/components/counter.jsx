@@ -6,9 +6,9 @@ class Counter extends Component {
     tags: []
   };
 
-  handleIncrement() {
-    console.log("Increment clicked!");
-  }
+  handleIncrement = () => {
+    console.log("Increment clicked!", this);
+  };
 
   renderTags() {
     if (this.state.tags.length === 0) return <p>'There are no tags!'</p>;
