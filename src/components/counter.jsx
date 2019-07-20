@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 100,
+    count: 0,
     tags: []
   };
 
   handleIncrement = () => {
-    console.log("Increment clicked!", this);
+    this.setState({ count: this.state.count + 1 });
   };
 
   renderTags() {
